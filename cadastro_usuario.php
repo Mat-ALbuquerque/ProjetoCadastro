@@ -13,7 +13,7 @@
 
     $sql = "INSERT INTO usuario (nome_usuario, email_usuario, fone_usuario, senha)";
 
-    $sql = "VALUES ('".$nome."','".$senha."')";
+    $sql .= "VALUES ('".$nome."','".$email."','".$fone."','".$senha."')";
     echo $sql."<br>";
     $result = mysqli_query($con, $sql);
     if($result)
