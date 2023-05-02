@@ -19,5 +19,5 @@
     if($result)
         echo "Dados cadastrados com sucesso!";
     else    
-        echo "Erro ao tentar cadastrar!";
+        echo "Erro ao tentar cadastrar!";L
 ?>
