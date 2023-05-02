@@ -10,5 +10,4 @@ CREATE TABLE usuario
 	email_usuario varchar(50) NOT NULL,
     fone_usuario  varchar(50) NULL,
     senha		  varchar(30) NOT NULL
-    L
 );
