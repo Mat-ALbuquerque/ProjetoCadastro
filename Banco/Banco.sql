@@ -11,3 +11,17 @@ CREATE TABLE usuario
     fone_usuario  varchar(50) NULL,
     senha		  varchar(30) NOT NULL
 );
+
+-- INSERIR DADOS	
+/*
+INSERT INTO usuario
+(nome_usuario, fone_usuario, email_usuario, senha)
+VALUES ('CÁSSIO','(18) 3622-9046', 'cassio@gmail.com', '1234');
+
+-- LISTAR DADOS
+SELECT * FROM usuario;
+
+-- ALTERAR DADOS
+UPDATE usuario SET nome_usuario = "Zezinho", email_usuario = "ze@gmail.com"
+WHERE id_usuario = 1
+*/
