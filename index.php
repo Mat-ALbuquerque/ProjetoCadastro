@@ -1,3 +1,6 @@
+<?php
+    include('criasessao.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +11,21 @@
 </head>
 <body>
     <h3>Página Inicial - Projeto Cadastro IFSP</h3>
+    <?php
+        if(!empty($_SESSION['login']))
+        {
+            echo "<h4>Olá ". $_SESSION['login']['nome_usuario']."</h1>";
+            echo "<a href='logout.php'>Sair</a>";
+        }
+    ?>
     <hr>
     <ul>
+        <?php
+        if(empty($_SESSION['login']))
+        {
+            echo "<li><a href='login.html'>Login</a></li>";
+        }
+        ?>
         <li><a href="cadastro_usuario.html">Cadastrar</a></li>
         <li><a href="listar_usuarios.php">Listar</a></li>
     </ul>
